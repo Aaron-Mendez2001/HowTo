@@ -46,7 +46,7 @@ const HowToList = ({ getList, list, isEditing, deleteCard, addCard, editCard, ca
             ))}
              
              {isEditing && (
-                        <form onSubmit={submitHandler}>
+                        <form onSubmit={submitHandler} className='addForm'>
                             Edit
                             <label htmlFor='title'>Title: </label>
                             <input type='text' name='title' value={editState.title} onChange={changeHandler}/>

@@ -27,7 +27,7 @@ const AddToList = (props) => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='addForm'>
             Add Your Howto!
             <label htmlFor='title'>Title: </label>
             <input type='text' name='title' value={formState.title} onChange={changeHandler} />
